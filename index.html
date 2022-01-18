@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Island+Moments&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Rubik", sans-serif;
+      }
+      body {
+        color:#444;
+        display: flex;
+        flex-direction: column;
+        gap:60px;
+      }
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .center-container{
+        width:1200px;
+        /* background-color: aqua; */
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+      }
+
+      .left-container{
+        width:50%;
+        /* background-color: burlywood; */
+      }
+
+      header {
+        height: 100vh;
+        /* background-color: bisque; */
+        color:#fdfafb;
+        position: relative;
+        background-image: linear-gradient(rgba(34, 31, 31, 0.598),rgba(34, 31, 31, 0.598)),url(hero.jpg);
+        background-size: cover;
+      }
+
+      h1 {
+        font-size: 52px;
+        padding-bottom: 32px;
+        line-height: 1;
+      }
+      nav {
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        padding-top: 32px;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 32px;
+        line-height: 1.5;
+      }
+
+      a:link,
+      a:visited {
+        display: inline-block;
+        padding: 16px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #e67e22;
+        border-radius: 9px;
+        border: none;
+      }
+      h2 {
+        font-size: 44px;
+        padding-bottom: 48px;
+      }
+    </style>
+  </head>
+  <body>
+      <header>
+        <nav class="container">
+          <p>LOGO</p>
+          <p>NAVIGATION</p>
+        </nav>
+        <div class="center-container">
+          <div class="left-container">
+          <h1>A healty meal delivered to your door, every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription that will make you eat
+            healthy again. Tailored to your personal tastes and nutritional
+            needs.
+          </p>
+            <a href="#" class="btn-link">Start eating well</a>
+          </div>
+        </div>
+      </header>
+      <section class="container">
+        <h2>Some random Heading</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit modi
+          corporis natus obcaecati reprehenderit quas ipsa iusto, aut minima
+          ratione minus dolorem asperiores hic. Incidunt qui est omnis
+          reprehenderit beatae?Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Maiores recusandae minus a voluptatum sint,
+          quibusdam porro id quas unde, accusamus impedit soluta dolorem est
+          voluptas rem mollitia atque, totam magnam?
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
